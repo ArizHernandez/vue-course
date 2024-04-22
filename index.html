@@ -16,7 +16,7 @@
       <input 
         type="text" 
         placeholder="Add Quote"
-        v-model="newMessage"
+        v-model.trim="newMessage"
         @keypress.enter="addQuote"
       />
       <button @click="toggleAuthor"> Toggle Author </button>

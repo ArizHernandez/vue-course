@@ -24,9 +24,9 @@ const app = createApp({
     }
 
     const addQuote = () => {
-      if (newMessage.value.trim().length === 0) return;
+      if (newMessage.value.length === 0) return;
 
-      quotes.value.unshift({ quote: newMessage.value.trim(), author: 'Tester' });
+      quotes.value.unshift({ quote: newMessage.value, author: 'Tester' });
       newMessage.value = '';
     }
 
